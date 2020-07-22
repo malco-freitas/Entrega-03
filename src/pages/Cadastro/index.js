@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 class Cadastro extends Component {
@@ -16,7 +17,9 @@ class Cadastro extends Component {
                     <h2>Repita sua senha:</h2>
                     <input type="password"/>
                     <div className="entradaSenha"></div>
-                    <div className="botaoLogin">Login</div>
+                    <Link to={`/Login`}>
+                        <div className="botaoLogin">Login</div>
+                    </Link>
                 </div>
             </div>     
         );
